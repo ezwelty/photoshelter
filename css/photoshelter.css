@@ -20,6 +20,11 @@ section div:not(#iptc_keywords) > a:hover {
   color: #000 !important;
 }
 
+@media only screen and (min-width: 769px)
+section .holder {
+    margin-left: 0 !important;
+}
+
 /* ---- Portfolios ---- */
 
 .GalleryNav ul {
