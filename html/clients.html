@@ -1,105 +1,89 @@
 <div id="clients">
-  <h2 class="title">Clients & Publications</h2>
-
-  <div class="button-group filters-button-group">
-    <button class="button is-checked" data-filter="*">*</button>
-    <button class="button" data-filter=".magazine">Magazines</button>
-    <button class="button" data-filter=".publisher">Book publishers</button>
-    <!-- <button class="button" data-filter=".newspaper">Newspapers</button> -->
-    <button class="button" data-filter=".nonprofit">Non-profits</button>
-    <!-- <button class="button" data-filter=".museum">Museums</button> -->
-    <button class="button" data-filter=".ad-agency">Ad agencies</button>
-    <button class="button" data-filter=".travel-agency">Travel agencies</button>
-    <button class="button" data-filter=".brand">Outdoor brands</button>
-  </div>
-  <div class="grid">
-    <!-- Magazines -->
-    <div class="item magazine"><span class="name">5280</span></div>
-    <div class="item magazine"><span class="name"><a href="/search?I_DSC=tearsheet+Afar&I_DSC_AND=t&_ACT=search&I_SORT=DATE">Afar</a></span></div>
-    <div class="item magazine"><span class="name">Alpinist</span></div>
-    <div class="item magazine"><span class="name"><a href="/search?I_DSC=tearsheet+Altair&I_DSC_AND=t&_ACT=search&I_SORT=DATE">Altaïr</a></span></div>
-    <div class="item magazine"><span class="name"><a href="/search?I_DSC=tearsheet+'Americas Quarterly'&I_DSC_AND=t&_ACT=search&I_SORT=DATE">Americas Quarterly</a></span></div>
-    <div class="item magazine"><span class="name">Backcountry</span></div>
-    <div class="item magazine"><span class="name"><a href="/search?I_DSC=tearsheet+'Backpacker'&I_DSC_AND=t&_ACT=search&I_SORT=DATE">Backpacker</a></span></div>
-    <div class="item magazine"><span class="name"><a href="/search?I_DSC=tearsheet+'Backpacker'&I_DSC_AND=t&_ACT=search&I_SORT=DATE">Under the Banyan Tree</a></span></div>
-    <div class="item magazine"><span class="name">Budget Travel</span></div>
-    <div class="item magazine"><span class="name">Climbing</span></div>
-    <div class="item magazine"><span class="name">Coloradan</span></div>
-    <div class="item magazine"><span class="name">Columns</span></div>
-    <div class="item magazine"><span class="name">Discover</span></div>
-    <div class="item magazine"><span class="name">Entrepreneur</span></div>
-    <div class="item magazine"><span class="name">Equinox</span></div>
-    <div class="item magazine"><span class="name">GEO</span></div>
-    <div class="item magazine"><span class="name">GO</span></div>
-    <div class="item magazine"><span class="name">High Country News</span></div>
-    <div class="item magazine"><span class="name">Independent Agent</span></div>
-    <div class="item magazine"><span class="name">Mountain</span></div>
-    <div class="item magazine"><span class="name">Muy Interesante</span></div>
-    <div class="item magazine"><span class="name">National Geographic Traveler</span></div>
-    <div class="item magazine"><span class="name">National Parks</span></div>
-    <div class="item magazine"><span class="name">Nature Conservancy</span></div>
-    <div class="item magazine"><span class="name">Seattle</span></div>
-    <div class="item magazine"><span class="name">Sierra</span></div>
-    <div class="item magazine"><span class="name">Outside</span></div>
-    <div class="item magazine"><span class="name">Outdoor</span></div>
-    <div class="item magazine"><span class="name">Popular Photography</span></div>
-    <div class="item magazine"><span class="name">The Walrus</span></div>
-    <div class="item magazine"><span class="name">Men's Fitness</span></div>
-    <div class="item magazine"><span class="name">Men's Journal</span></div>
-    <div class="item magazine"><span class="name">Die Alpen</span></div>
-    <div class="item magazine"><span class="name">Travel + Leisure</span></div>
-    <div class="item magazine"><span class="name"><a href="/search?I_DSC=tearsheet+'The Atlantic'&I_DSC_AND=t&_ACT=search&I_SORT=DATE">The Atlantic</a></span></div>
-    <div class="item magazine"><span class="name">Orion</span></div>
-    <div class="item magazine"><span class="name">EOS</span></div>
-    <div class="item magazine"><span class="name">VIEW</span></div>
-    <div class="item magazine"><span class="name">Cascadia Weekly</span></div>
-    <div class="item magazine"><span class="name">Pacific Northwest</span></div>
-    <div class="item magazine"><span class="name">Adventures NW</span></div>
-    <div class="item magazine"><span class="name">Audubon</span></div>
-    <!-- Newspapers -->
-    <div class="item newspaper"><span class="name">Washington Post</span></div>
-    <div class="item newspaper"><span class="name">Everett Daily Herald</span></div>
-    <!-- Museums -->
-    <div class="item museum"><span class="name">Burke Museum</span></div>
-    <!-- Book publishers -->
-    <div class="item publisher"><span class="name">Mountaineers Books</span></div>
-    <div class="item publisher"><span class="name">Braided River</span></div>
-    <div class="item publisher"><span class="name">Cloud Ridge Publishing</span></div>
-    <div class="item publisher"><span class="name">Lonely Planet</span></div>
-    <div class="item publisher"><span class="name">Miles Partnership</span></div>
-    <div class="item publisher"><span class="name">Rough Guides</span></div>
-    <div class="item publisher"><span class="name">Time-Life Books</span></div>
-    <div class="item publisher"><span class="name">Workman Publishing</span></div>
-    <div class="item publisher"><span class="name">Little, Brown and Company</span></div>
-    <div class="item publisher"><span class="name">History Press</span></div>
-    <div class="item publisher"><span class="name">National Geographic Books</span></div>
-    <!-- Environmental organizations -->
-    <div class="item nonprofit"><span class="name">Environmental Defense Fund</span></div>
-    <div class="item nonprofit"><span class="name">North Cascades Institute</span></div>
-    <div class="item nonprofit"><span class="name">Point Reyes Field Institute</span></div>
-    <div class="item nonprofit"><span class="name">Wild Salmon Center</span></div>
-    <div class="item nonprofit"><span class="name">Washington Wild</span></div>
-    <div class="item nonprofit"><span class="name">National Parks Conservation Association</span></div>
-    <!-- <div class="item nonprofit"><span class="name">Mountain View Community Church</span></div> -->
-    <!-- Ad & design agencies -->
-    <div class="item ad-agency"><span class="name">Novus Media Solutions</span></div>
-    <div class="item ad-agency"><span class="name">Pappas Group</span></div>
-    <div class="item ad-agency"><span class="name">Sukle Advertising & Design</span></div>
-    <div class="item ad-agency"><span class="name">Browns Design</span></div>
-    <!-- Travel agencies -->
-    <div class="item travel-agency"><span class="name">ROW Adventures</span></div>
-    <div class="item travel-agency"><span class="name">Wilderness Travel</span></div>
-    <!-- Outdoor brands -->
-    <div class="item brand"><span class="name">The Clymb</span></div>
-    <div class="item brand"><span class="name">Patagonia</span></div>
-    <div class="item brand"><span class="name">Zamberlan Boots</span></div>
-    <div class="item brand"><span class="name">Black Diamond</span></div>
-    <div class="item brand"><span class="name">Revellion</span></div>
-    <!-- Outdoor brands -->
-    <div class="item"><span class="name">Bing</span></div>
-    <div class="item"><span class="name">University of Washington</span></div>
-    <div class="item"><span class="name">University of Colorado</span></div>
-    <div class="item"><span class="name">Travel Channel</span></div>
-    <!-- Bands -->
-    <div class="item"><span class="name">Fellow Pynins</span></div>
+  <h2 class="title">Clients &#38; Publications</h2>
+  <!-- Buttons -->
+  <button class="magazines">Magazines</button>
+  <button class="publishers">Book publishers</button>
+  <button class="nonprofits">Non-profits</button>
+  <button class="brands">Outdoor brands</button>
+  <button class="others">...</button>
+  <div id="spacer"></div>
+  <!-- Clients -->
+  <li class="magazine">5280</li>
+  <li class="magazine">Adventures NW</li>
+  <li class="magazine"><a href="/search?I_DSC=tearsheet+Afar&I_DSC_AND=t&_ACT=search&I_SORT=DATE">Afar</a></li>
+  <li class="magazine">Die Alpen</li>
+  <li class="magazine">Alpinist</li>
+  <li class="magazine"><a href="/search?I_DSC=tearsheet+Altair&I_DSC_AND=t&_ACT=search&I_SORT=DATE">Altaïr</a></li>
+  <li class="magazine"><a href="/search?I_DSC=tearsheet+'Americas Quarterly'&I_DSC_AND=t&_ACT=search&I_SORT=DATE">Americas Quarterly</a></li>
+  <li class="magazine"><a href="/search?I_DSC=tearsheet+'The Atlantic'&I_DSC_AND=t&_ACT=search&I_SORT=DATE">The Atlantic</a></li>
+  <li class="magazine">Audubon</li>
+  <li class="magazine">Backcountry</li>
+  <li class="magazine"><a href="/search?I_DSC=tearsheet+'Backpacker'&I_DSC_AND=t&_ACT=search&I_SORT=DATE">Backpacker</a></li>
+  <li class="">Bing</li>
+  <li class="brand">Black Diamond</li>
+  <li class="publisher">Braided River</li>
+  <li class="ad-agency">Browns Design</li>
+  <li class="magazine">Budget Travel</li>
+  <li class="museum">Burke Museum</li>
+  <li class="magazine">Cascadia Weekly</li>
+  <li class="magazine">Climbing</li>
+  <li class="publisher">Cloud Ridge Publishing</li>
+  <li class="brand">The Clymb</li>
+  <li class="magazine">Coloradan</li>
+  <li class="magazine">Columns</li>
+  <li class="magazine">Discover</li>
+  <li class="magazine">Entrepreneur</li>
+  <li class="nonprofit">Environmental Defense Fund</li>
+  <li class="magazine">EOS</li>
+  <li class="magazine">Equinox</li>
+  <li class="newspaper">Everett Daily Herald</li>
+  <li class="band">Fellow Pynins</li>
+  <li class="magazine">GEO</li>
+  <li class="magazine">GO</li>
+  <li class="magazine">High Country News</li>
+  <li class="publisher">History Press</li>
+  <li class="magazine">Independent Agent</li>
+  <li class="publisher">Little, Brown and Company</li>
+  <li class="publisher">Lonely Planet</li>
+  <li class="magazine">Men's Fitness</li>
+  <li class="magazine">Men's Journal</li>
+  <li class="publisher">Miles Partnership</li>
+  <li class="magazine">Mountain</li>
+  <li class="publisher">Mountaineers Books</li>
+  <li class="magazine">Muy Interesante</li>
+  <li class="publisher">National Geographic Books</li>
+  <li class="magazine">National Geographic Traveler</li>
+  <li class="magazine">National Parks</li>
+  <li class="nonprofit">National Parks Conservation Association</li>
+  <li class="magazine">Nature Conservancy</li>
+  <li class="nonprofit">North Cascades Institute</li>
+  <li class="ad-agency">Novus Media Solutions</li>
+  <li class="magazine">Orion</li>
+  <li class="magazine">Outdoor</li>
+  <li class="magazine">Outside</li>
+  <li class="magazine">Pacific Northwest</li>
+  <li class="ad-agency">Pappas Group</li>
+  <li class="brand">Patagonia</li>
+  <li class="nonprofit">Point Reyes Field Institute</li>
+  <li class="magazine">Popular Photography</li>
+  <li class="brand">Revellion</li>
+  <li class="publisher">Rough Guides</li>
+  <li class="travel-agency">ROW Adventures</li>
+  <li class="magazine">Seattle</li>
+  <li class="magazine">Sierra</li>
+  <li class="ad-agency">Sukle Advertising &#38; Design</li>
+  <li class="publisher">Time-Life Books</li>
+  <li class="magazine">Travel + Leisure</li>
+  <li class="television">Travel Channel</li>
+  <li class="magazine"><a href="/search?I_DSC=tearsheet+'Backpacker'&I_DSC_AND=t&_ACT=search&I_SORT=DATE">Under the Banyan Tree</a></li>
+  <li class="university">University of Colorado</li>
+  <li class="university">University of Washington</li>
+  <li class="magazine">VIEW</li>
+  <li class="magazine">The Walrus</li>
+  <li class="newspaper">Washington Post</li>
+  <li class="nonprofit">Washington Wild</li>
+  <li class="nonprofit">Wild Salmon Center</li>
+  <li class="travel-agency">Wilderness Travel</li>
+  <li class="publisher">Workman Publishing</li>
+  <li class="brand">Zamberlan</li>
 </div>

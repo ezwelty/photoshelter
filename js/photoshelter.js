@@ -42,62 +42,6 @@ window.onload = function() {
   // }
 }
 
-var gridInitialized = false;
-setInterval(function() {
-  if (window.location.pathname == "/p/clients") {
-    if (!gridInitialized) {
-      gridInitialized = true;
-      initialize_client_grid();
-    }
-  } else {
-    gridInitialized = false;
-  }
-}, 50);
-
-// http://isotope.metafizzy.co/filtering.html
-function initialize_client_grid() {
-  var elem = document.querySelector(".grid");
-  var clientPage = document.querySelector("div#mode-p");
-  if (elem && clientPage && clientPage.className == "stack-top") {
-    var iso = new Isotope(elem, {
-      itemSelector: '.item',
-      layoutMode: 'fitRows',
-      getSortData: {
-        name: '.name'
-      }
-    });
-    // bind filter button click
-    var filtersElem = document.querySelector('.filters-button-group');
-    filtersElem.addEventListener('click', function(event) {
-      // only work with buttons
-      if (!matchesSelector(event.target, 'button')) {
-        return;
-      }
-      var filterValue = event.target.getAttribute('data-filter');
-      // use matching filter function
-      iso.arrange({filter: filterValue});
-    });
-    // change is-checked class on buttons
-    var buttonGroups = document.querySelectorAll('.button-group');
-    for (var i=0, len=buttonGroups.length; i < len; i++) {
-      var buttonGroup = buttonGroups[i];
-      radioButtonGroup(buttonGroup);
-    }
-    function radioButtonGroup(buttonGroup) {
-      buttonGroup.addEventListener('click', function(event) {
-        // only work with buttons
-        if (!matchesSelector(event.target, 'button')) {
-          return;
-        }
-        buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
-        event.target.classList.add('is-checked');
-      });
-    }
-  } else {
-    setTimeout(initialize_client_grid, 50);
-  }
-}
-
 var contactHtml = `
   <div data-global="" data-ordinal="3" class="widget Content">
     <div class="main">
@@ -126,13 +70,8 @@ var contactHtml = `
         <li>
           <a target="_blank" class="facebook" href="https://www.facebook.com/ethanweltyz"></a>
         </li>
-
         <li>
           <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/ethanwelty"></a>
-        </li>
-
-        <li>
-          <a target="_blank" class="googlePlus" href="https://plus.google.com/113628608426456917115"></a>
         </li>
       </ul>
     </div>
