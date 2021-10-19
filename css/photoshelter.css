@@ -44,11 +44,12 @@ li.archive.open {
 }
 
 @media only screen and (min-width: 769px) {
-  .c2content nav, /* NOTE: breaks site builder */
+  /* NOTE: breaks site builder */
+  /* .c2content nav,
   .c1 nav {
     padding-top: 2em !important;
     position: fixed !important;
-  }
+  } */
   .ImageCover {
     padding-top: 26px !important;
     padding-bottom: 26px !important;
@@ -254,7 +255,7 @@ body.c1 .follow-options li a {
 /* ---- Clients ---- */
 
 #clients button {
-  display: inline-block;
+  /* display: inline-block; */
   cursor: pointer;
   text-transform: none;
   font-size: 90%;
