@@ -55,7 +55,7 @@ var contactHtml = `
           contact
         </div>
         <div id="contact-info">
-          Boulder, CO, USA
+          Zürich, Switzerland
           <br>
           +1 (206) 853-3712
           <br>
