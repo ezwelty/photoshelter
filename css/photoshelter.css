@@ -72,13 +72,17 @@ li.archive.open {
   }
 }
 
-/* Breaks site builder */
+/* Maybe breaks site builder */
 .SlideShowControls {
   top: 26px !important;
 }
 
 .ImageStage > div {
-  top: 26px !important;
+  top: 26px;
+}
+
+.ImageStage.fullscreen-img div {
+  top: 0px;
 }
 
 #mode-portfolio .GalleryNav .on,
