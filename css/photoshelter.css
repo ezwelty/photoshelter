@@ -64,6 +64,9 @@ li.archive.open {
   section .holder {
     margin-top: 0 !important;
   }
+  .ImageStage > div {
+    top: 26px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -75,10 +78,6 @@ li.archive.open {
 /* Maybe breaks site builder */
 .SlideShowControls {
   top: 26px !important;
-}
-
-.ImageStage > div {
-  top: 26px;
 }
 
 .ImageStage.fullscreen-img div {
