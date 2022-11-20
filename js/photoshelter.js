@@ -55,10 +55,9 @@ var contactHtml = `
           contact
         </div>
         <div id="contact-info">
-          Zürich, Switzerland
-          <br>
-          +1 (206) 853-3712
-          <br>
+          Zürich, Switzerland<br>
+          +41 (0)77 484 89 11<br>
+          +1 (206) 853-3712<br>
           <a href="mailto:ethan.welty@gmail.com">ethan.welty@gmail.com</a>
         </div>
       </div>
